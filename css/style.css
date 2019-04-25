@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+.div-content{
+    width:400px;
+    height:500px;
+    margin:0 auto;
+    border:1px solid #7272726c;
+    position: relative;
+    overflow: hidden;
+}
+.left-div{
+    width:82%;
+    height:100%;
+    position: absolute;
+    right:100%;
+    z-index:1;
+}
+.right-div{
+    width:72%;
+    height:100%;
+    position: absolute;
+    left:100%;
+}
+.left-div>div{
+    width:100%;
+    height:25%;
+    transition: all 1.8s;
+    display: flex;
+}
+.right-div>div{
+    width:100%;
+    height:25%;
+    transition: all 1.8s;
+    display: flex;
+}
+.div-content:hover .left-div>div{
+    transform: translate(326px, 0px);
+}
+.div-content:hover .right-div>div{
+    transform: translate(-262px, 0px);
+}
+.triangle{
+    width:50%;
+    height:100%;
+    border-bottom:solid 62px transparent;
+    border-right:solid 62px transparent;
+    border-left:solid 124px indigo;
+    border-top:solid 62px transparent;
+}
+.square{
+    width:50%;
+    height:100%;
+    background-color: indigo;
+}
+.square-two{
+    background-color:maroon;
+}
+.triangle-two{
+    border-left:solid 120px maroon !important;
+}
+.square-three{
+    background-color:green;
+}
+.triangle-three{
+    border-left:solid 120px green !important;
+}
+.square-four{
+    background-color:olive;
+}
+.triangle-four{
+    border-left:solid 120px olive !important;
+}
+.five{
+    background-color: rgb(41, 41, 201);
+    z-index: -50;
+}
+.six{
+    background-color: red;
+    transition-delay: 1s !important;
+}
+.seven{
+    background-color: rgb(44, 221, 44);
+    transition-delay: 2s !important;
+}
+.eight{
+    background-color: yellow;
+    transition-delay: 3s !important;
+}
+.triangle-second{
+    width:50%;
+    height:100%;
+    border-bottom:solid 62px transparent;
+    border-right:solid 62px transparent;
+    border-left:solid 124px white !important;
+    border-top:solid 62px transparent;
+}
+.two{
+    transition-delay: 1s !important;
+}
+.three{
+    transition-delay: 2s !important;
+}
+.four{
+    transition-delay: 3s !important;
+
+}
